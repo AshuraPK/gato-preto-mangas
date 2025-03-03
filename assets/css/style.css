@@ -1,43 +1,122 @@
-
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
 @import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css");
 
-*{
+body {
+    font-family: Arial, sans-serif;
+    background: #222;
+    color: white;
     margin: 0;
     padding: 0;
-    font-family: "Inter", sans-serif;
-    font-optical-sizing: auto;
-    font-weight: 600;
-    font-style: normal;
-    background-image: url();
+    
 }
- 
-header nav{
-    background-color: bisque;
-    padding: 30px;
+
+body { 
+    /* para colocar a foto de fundo do site */
+    background-image: url('../img/backiee-298830.jpg');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+.header {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background: #333;
+}
+.header .logo {
+    display: flex;
     align-items: center;
 }
-.logo{
-    text-decoration: none;
-    color: #011c26;
-    font-weight: bold;
-    cursor: pointer;
+.header .logo img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin-right: 10px;
 }
-.menu, .icons{
-    list-style: none; /* aqui tiro os pontos da lista*/
-    display: flex; /*aqui eu mexo nas palavras dentro do menu*/
-    gap: 10px; /*espaçamento*/
-}
- 
-.menu li a, .icons li a{
-    text-decoration: none;
-    color: #000203;
-    padding: 8px;
-    border-radius: 8px;
-}
- 
-.menu li a:hover, .icons li a:hover{
-    background-color:#01090c;
+.header nav a {
+    margin: 0 10px;
     color: white;
+    text-decoration: none;
+}
+.header nav a:hover {
+    text-decoration: underline;
+}
+.header .search-container {
+    display: flex;
+    align-items: center;
+}
+.header .search-container input {
+    padding: 5px;
+    width: 200px;
+}
+.header .icons a {
+    margin-left: 10px;
+    color: white;
+    text-decoration: none;
+}
+
+
+.gallery {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    min-height: 60vh; /* Para garantir espaço entre header e footer */
+    padding: 20px;
+}
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+    gap: 10px;
+    padding: 20px;
+}
+.gallery-item {
+    background: #444;
+    padding: 10px;
+    text-align: center;
+}
+.gallery-item img {
+    width: 100%;
+    height: auto;
+}
+
+
+
+
+.footer {
+    background-color: #210D26;
+    color: #F2F2F2;
+    padding: 15px 0;
+}
+
+.footer a {
+    color: #F2F2F2;
+    text-decoration: none;
+}
+
+.footer a:hover {
+    text-decoration: underline;
+}
+
+.social-icons a {
+    color: #F2F2F2;
+    font-size: 24px;
+    margin-right: 15px;
+    transition: color 0.3s;
+}
+
+.social-icons a:hover {
+    color: #F2F2F2;
+}
+
+.footer-bottom {
+    text-align: center;
+    padding: 20px 0;
+    border-top: 1px solid #F2F2F2;
+    margin-top: 20px;
 }
